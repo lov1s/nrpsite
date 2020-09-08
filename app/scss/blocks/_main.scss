@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+.page-main__wrapper{
+    display: flex;
+    min-height: 840px;
+    background-color: #3F238E;
+    background-image: url('../img/bg-space.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+}
+.page-main__title{
+    padding: 400px 0 0 250px;
+    color: #D9EBE9;
+}
+.page-main__text{
+    padding-left: 250px;
+    color: #D9EBE9; 
+}
+
+.btn{
+    display: block;
+    box-sizing: border-box;
+    width: 260px;
+    padding: 15px 80px;
+    margin-left: 250px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    background: #E4D39F;
+    color: #0E1821;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.page-main_patch{
+    width: 500px;
+}
+.page-main__wrap_right{
+    justify-content: flex-end;
+    padding-top: 150px;
+    padding-left: 500px;
+}

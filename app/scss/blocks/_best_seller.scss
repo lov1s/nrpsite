@@ -1,0 +1,30 @@
+.best_seller{
+    background: #F2F2F2;
+}
+.best_seller__title{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.best_seller__list{
+    display: flex;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.best_seller__item{
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+
+    width: 250px;
+    padding: 30px;
+    
+    background: #FFFFFF;
+    border: 1px solid #0E1821;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
