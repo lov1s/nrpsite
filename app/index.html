@@ -8,15 +8,15 @@
 </head>
 <body>
     <header class="page-header header">
-        <nav class="main-nav nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav nav main-nav--closed main-nav--nojs">
             <div class="main-nav_wrap">
                 <div class="main-nav-top">
                     <a class="page-header-logo logo" href="#">
-                            <img class="page-header__logo-img" src="http://placehold.it/310x50" width="86" height="35" alt="logo">
+                            <img class="page-header__logo-img" src="img/logo.svg" width="86" height="35" alt="logo">
                     </a>
-                    <!--<button class="main-nav__toggle " type="button">
+                    <button class="main-nav__toggle " type="button">
                             <span class="visually-hidden">Open Menu</span>
-                    </button>!-->
+                    </button>
                 </div>
                 <div class="main-nav__wrapper ">
                     <ul class="main-nav__list site-list main-nav__list--second">
@@ -37,9 +37,13 @@
                         <li class="user-list__item main-nav__item  user-list__item--border">
                             <a class="user-list__link user-list__search" href="#"><span>Search</span></a>
                         </li>
-                        <li class="user-list__item main-nav__item ">
+                        <li class="user-list__item main-nav__item  user-list__item--border">
+                            <a class="user-list__link user-list__sign_in" href="#"><span>Sign in</span></a>
+                        </li>
+                        <li class="user-list__item main-nav__item user-list__item--border ">
                             <a class="user-list__link user-list__cart" href="#"><span>Cart</span></a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -52,94 +56,163 @@
                 <p class="page-main__text">Embroidered patches for you need</p>
                 <a class="page-main_btn btn" href="#">Shop Now</a>
             </div>
-            <div class="page-main__wrap_right">
+            <!-- <div class="page-main__wrap_right">
                 <img class="page-main_patch" src="img/SAOCOM.png" alt="Patch">
-            </div>
+            </div> -->
         </div>
             <section class="features">
                 <div class="features__wrapper">
                     <ul class="features__list">
-                        <li class="features__item features__item--shipping">
-                           <p>World shipping</p>
+                        <li class="features__item">
+                           <a class="features__link features__link--paypal" href="#"><span>PayPal</span></a>               
                         </li>
-                        <li class="features__item about-us__item--paypal">
-                           <p>PayPal</p>               
-                        </li>
-                        <li class="features__item about-us__item--help">
-                            <p>Help</p>               
+                        <li class="features__item">
+                            <a class="features__link features__link--shipping" href="#"><span>World shipping</span></a>
+                         </li>
+                        <li class="features__item">
+                            <a class="features__link features__link--help" href="#"><span>Help</span></a>               
                          </li>
                     </ul>
                 </div>
             </section>
             <section class="best_seller">
-                <h3 class="best_seller__title">Best seller</h3>
-                <ul class="best_seller__list">
-                    <li class="best_seller__item">
-                        <div class="item__wrap">
-                            <img src="http://placehold.it/250x250" alt="Product_item">
-                            <span class="best_seller__name">Expedition 40 ISS</span>
-                            <span class="best_seller__rate"></span>
-                            <span class="best_seller__price">$9.99</span>                  
-                            <a class="product__cart" href="#">               
-                               <span class="visually-hidden">Корзина</span>
-                            </a>                           
-                        </div>
-                    </li>
-                    <li class="best_seller__item">
-                        <div class="item__wrap">
-                            <img src="#" alt="Product_item">
-                            <span class="best_seller__name">Expedition 40 ISS</span>
-                            <span class="best_seller__rate"></span>
-                            <span class="best_seller__price">$9.99</span>                  
-                            <a class="product__cart" href="#">               
-                               <span class="visually-hidden">Корзина</span>
-                            </a>                           
-                        </div>
-                    </li>
-                    <li class="best_seller__item">
-                        <div class="item__wrap">
-                            <img src="#" alt="Product_item">
-                            <span class="best_seller__name">Expedition 40 ISS</span>
-                            <span class="best_seller__rate"></span>
-                            <span class="best_seller__price">$9.99</span>                  
-                            <a class="product__cart" href="#">               
-                               <span class="visually-hidden">Корзина</span>
-                            </a>                           
-                        </div>
-                    </li>
-                    <li class="best_seller__item">
-                        <div class="item__wrap">
-                            <img src="#" alt="Product_item">
-                            <span class="best_seller__name">Expedition 40 ISS</span>
-                            <span class="best_seller__rate"></span>
-                            <span class="best_seller__price">$9.99</span>                  
-                            <a class="product__cart" href="#">               
-                               <span class="visually-hidden">Корзина</span>
-                            </a>                           
-                        </div>
-                    </li>
-                </ul>
+                <div class="best_seller__wrap">
+                    <h3 class="best_seller__title">Best seller</h3>
+                    <ul class="best_seller__list">
+                        <li class="best_seller__item">
+                            <div class="item__wrap">
+                                <a class="best_seller__link" href="#">
+                                    <img src="img/product_item.jpg" alt="Product_item">
+                                    <span class="best_seller__name">Expedition 40 ISS</span>
+                                    <div class="best_seller__raiting">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/StarFill.svg" alt="">
+                                    </div>
+                                    <div class="best_seller__bottom">
+                                        <span class="best_seller__price">$9.99</span>                  
+                                        <a class="product__cart" href="#">               
+                                        <span class="visually-hidden">Корзина</span>
+                                        </a>
+                                    </div>    
+                                </a>                           
+                            </div>
+                        </li>
+                        <li class="best_seller__item">
+                            <div class="item__wrap">
+                                <a class="best_seller__link" href="#">
+                                    <img src="img/product_item.jpg" alt="Product_item">
+                                    <span class="best_seller__name">Expedition 40 ISS</span>
+                                    <div class="best_seller__raiting">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/StarFill.svg" alt="">
+                                    </div>
+                                    <div class="best_seller__bottom">
+                                        <span class="best_seller__price">$9.99</span>                  
+                                        <a class="product__cart" href="#">               
+                                        <span class="visually-hidden">Корзина</span>
+                                        </a>
+                                    </div>
+                                </a>                         
+                            </div>
+                        </li>
+                        <li class="best_seller__item">
+                            <div class="item__wrap">
+                                <a class="best_seller__link" href="#">
+                                    <img src="img/product_item.jpg" alt="Product_item">
+                                    <span class="best_seller__name">Expedition 40 ISS</span>
+                                    <div class="best_seller__raiting">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/StarFill.svg" alt="">
+                                    </div>
+                                    <div class="best_seller__bottom">
+                                        <span class="best_seller__price">$9.99</span>                  
+                                        <a class="product__cart" href="#">               
+                                        <span class="visually-hidden">Корзина</span>
+                                        </a>
+                                    </div>  
+                                </a>                           
+                            </div>
+                        </li>
+                        <li class="best_seller__item">
+                            <div class="item__wrap">
+                                <a class="best_seller__link" href="#">
+                                    <img src="img/product_item.jpg" alt="Product_item">
+                                    <span class="best_seller__name">Expedition 40 ISS</span>
+                                    <div class="best_seller__raiting">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/Star.svg" alt="">
+                                        <img class="best_seller__star" src="img/StarFill.svg" alt="">
+                                    </div>
+                                    <div class="best_seller__bottom">
+                                        <span class="best_seller__price">$9.99</span>                  
+                                        <a class="product__cart" href="#">               
+                                        <span class="visually-hidden">Корзина</span>
+                                        </a>
+                                    </div>  
+                                </a>                           
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <footer class="page_footer">
-                <nav class="footer_nav">
-                    <ul class="footer_nav__list_about">
-                        <li class="footer_nav__item-title">About</li>
-                        <li class="footer_nav__item">About us</li>
-                        <li class="footer_nav__item">Delivery Information</li>
-                        <li class="footer_nav__item">Contact Us</li>
-                    </ul>
-                    <ul class="footer_nav__list_help">
-                        <li class="footer_nav__item-title">Help</li>
-                        <li class="footer_nav__item"><a href="#">Sign In</a></li>
-                        <li class="footer_nav__item"><a href="#">Privacy Policy</a></li>
-                        <li class="footer_nav__item"><a href="#">Payment Methods</a></li>
-                    </ul>
-
-                </nav>
-
-            </footer>
+            <section class="about_us">
+                <div class="about_us__wrapper">
+                    <img class="about_us__slider" src="img/shveynaya-fabrika.jpg" alt="Fabrik">
+                    <div class="about_us__description">
+                        <h2 class="about_us__title">About us</h2>
+                        <p class="about_us__text">We supply original  Russian equipment all over  the world! Fast delivery time to any part of the world in 1-3 days with 
+                            low cost.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
+    <footer class="page_footer">
+        <div class="page_footer__wrap">
+            <section class="footer_nav">
+                <ul class="footer_nav__list_about">
+                    <li class="footer_nav__item"><span>About</span></li>
+                    <li class="footer_nav__item"><a href="#">About us</a></li>
+                    <li class="footer_nav__item"><a href="#">Delivery Information</a></li>
+                    <li class="footer_nav__item"><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="footer_nav__list_help">
+                    <li class="footer_nav__item"><span>Help</span></li>
+                    <li class="footer_nav__item"><a href="#">Sign In</a></li>
+                    <li class="footer_nav__item"><a href="#">Privacy Policy</a></li>
+                    <li class="footer_nav__item"><a href="#">Payment Methods</a></li>
+                </ul>
+            </section>
+            <div class="page_footer__social">
+                <h4>Share us</h4>
+                <ul class="social__list">
+                    <li class="social__item"><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                    <li class="social__item"><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+                    <li class="social__item"><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+                    <li class="social__item"><a href="#"><img src="img/pinterest.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page_footer__payments">
+            <ul class="payments__list">
+                <li><img src="img/paypal_footer.svg" alt="paypal"></li>
+                <li><img src="img/visa_footer.svg" alt="visa"></li>
+                <li><img src="img/mastercard_footer.svg" alt="mastercard"></li>
+            </ul>
+        </div>
+        <p class="page_footer__copyrights">© Copyright 2020 Rocket Patches Inc. All Rights Reserved.</p>
+    </footer>
     <script src="js/app.min.js"></script>
 </body>
 </html>
