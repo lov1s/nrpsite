@@ -1,15 +1,79 @@
 .features{
-    margin-bottom: 50px;
+
+    background: #F2F2F2;
 }
 .features__wrapper{
     width: 1400px;
+    margin: 0 auto;
 }
 .features__list{
     display: flex;
     padding: 0;
-    margin: 0 auto;
+    padding-top: 80px;
+    margin: 0;
     list-style: none;
 }
-.features__item{
-    padding-left: 50px;
+
+.features__item {
+    position: relative;
+    width: 450px;
+    background: #E4D39F;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.features__item:last-child{
+    margin-right: 0;
+}
+.features__link {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    width: 130px;
+    
+    padding: 40px;
+
+    font-size: 24px;
+    font-weight: 500;
+    color: #0E1821;
+    text-decoration: none;
+}
+.features__link:hover{
+    opacity: 0.7;
+}
+.features__link span{
+    display: block;
+    width: 130px;
+    padding-left: 200px;
+}
+.features__link--paypal::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 23px; 
+    bottom: 0;
+    width: 120px;
+    height: 100px;
+    background: url("../img/paypal_features.svg") no-repeat;
+    
+}
+.features__link--shipping::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 23px; 
+    bottom: 0;
+    width: 120px;
+    height: 100px;
+    background: url("../img/shipping_features.svg") no-repeat;
+    
+}
+.features__link--help::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 23px; 
+    bottom: 0;
+    width: 120px;
+    height: 100px;
+    background: url("../img/help_features.svg") no-repeat;  
 }

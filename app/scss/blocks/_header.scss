@@ -1,6 +1,9 @@
 .page-header{
     background: #F2F2F2;
 }
+.main-nav{
+    position: relative;
+}
 .main-nav_wrap{
     display: flex;
     width: 1400px;
@@ -12,7 +15,8 @@
 .page-header-logo{
     display: block;
     width: 310px;
-    padding-left: 250px;
+    margin-top: 10px;
+    margin-right: 170px;
 }
 .main-nav__list{
     display: flex;
@@ -21,12 +25,21 @@
     list-style: none;
 }
 .main-nav__item {
-    padding: 30px 0 30px 40px;
+    padding: 30px 40px 30px 0;
+}
+.main-nav__toggle {
+    display: none;
 }
 .user-list{
     width: 170px;
     justify-content: flex-end;
-    padding-left: 140px;
+    margin-left: 340px;
+}
+.user-list__item{
+    margin-right: 20px;
+}
+.user-list a {
+    position: relative;
 }
 .main-nav__item a {
     display: block;  
@@ -37,3 +50,169 @@
     font-weight: bold;
     text-decoration: none;
 }
+.user-list__search::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 0; 
+    bottom: 0;
+    left: -30px;
+    width: 21px;
+    height: 21px;
+    background: url("../img/search.svg") no-repeat;
+    opacity: 0.7;
+}
+.user-list__sign_in::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 0; 
+    bottom: 0;
+    left: -30px;
+    width: 19px;
+    height: 19px;
+    background: url("../img/user.svg") no-repeat;
+    opacity: 0.7;
+}
+.user-list__cart::before{
+    content: '';
+    position: absolute;
+    display: block; 
+    top: 0; 
+    bottom: 0;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+    background: url("../img/mcart.svg") no-repeat;
+    opacity: 0.7;
+}
+.user-list__search span{
+    @include visually-hidden();
+}
+.user-list__cart span{
+    @include visually-hidden();
+}
+.user-list__sign_in span{
+    @include visually-hidden();
+}
+.main-nav__item a:hover{
+    opacity: 0.6;
+}
+
+
+@media(max-width: 767px) {
+    .main-nav_wrap{
+        flex-direction: column;   
+    }
+    .main-nav__wrapper{
+        flex-direction: column;  
+    }
+    .main-nav__list{
+        flex-direction: column;
+    }
+    .user-list{
+        padding-left: 0;
+    }
+    .main-nav__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0 30px 100px;
+        
+    }
+    .main-nav__toggle {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        z-index: 2;
+    
+        display: block;
+        width: 50px;
+        height: 50px;
+    
+        cursor: pointer;
+        border: none;
+    
+    }
+    .main-nav--closed .main-nav__toggle::before {
+        content: "";
+    
+        position: absolute;
+        top: 15px;
+        left: 17px;
+    
+        width: 20px;
+        height: 2px;
+    
+        background-color: #221f1f;
+        box-shadow: 0 8px 0 0 #221f1f, 0 16px 0 0 #221f1f;
+    }
+    
+    
+    .main-nav--opened .main-nav__toggle {
+        top: 10px;
+        right: 0;
+    }
+    
+    .main-nav--opened .main-nav__toggle::before,
+    .main-nav--opened .main-nav__toggle::after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: 10px;
+        width: 30px;
+        height: 3px;
+        background-color: #221f1f;
+        border-radius: 20px;
+    }
+    
+    .main-nav--opened .main-nav__toggle::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+    
+    .main-nav--opened .main-nav__toggle::after {
+        transform: rotate(-45deg);
+    }
+    
+    .main-nav--opened .main-nav__toggle:active::before,
+    .main-nav--opened .main-nav__toggle:active::after {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .main-nav--closed .site-list__item {
+        display: none;
+
+        &--acitive {
+            display: block;
+        }
+    }
+
+    .main-nav--closed .user-list__item {
+        display: none;
+    }
+
+    .main-nav--nojs .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav--nojs .main-nav__wrapper {
+        position: static;
+        min-height: 0;
+    }
+
+    .main-nav--nojs .site-list__item {
+        display: block;
+    }
+
+    .main-nav--nojs .site-list__item--active a {
+        padding-right: 21px;
+        padding-left: 21px;
+        text-align: left;
+    }
+
+    .main-nav--nojs .user-list__item {
+        display: block;
+    }
+}
+

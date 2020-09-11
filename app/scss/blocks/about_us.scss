@@ -1,0 +1,26 @@
+.about_us{
+    background: #F2F2F2;
+    padding-bottom: 80px;
+}
+.about_us__wrapper{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+.about_us__slider{
+    width: 800px;
+    border-radius: 5px;
+}
+.about_us__title{
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 190px;
+    font-weight: 600;
+    font-size: 36px;
+}
+.about_us__text{
+    padding-left: 45px;
+    font-size: 24px;
+}

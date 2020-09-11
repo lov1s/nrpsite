@@ -1,0 +1,71 @@
+.contact_wrap{
+    background: #0C131A;
+    background-image: url('../img/bg_moon1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact_container{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+.contact_form__wrap{
+    margin-left: 200px;
+}
+.contact_info__title{
+    margin-top: 400px;
+    color: #D9EBE9;
+    font-weight: 800;
+    font-size: 48px;
+}
+.contact_info__text{
+    width: 700px;
+    color: #D9EBE9;
+    font-size: 24px;
+}
+.contact_form__user{
+    margin: 0;
+    padding: 400px 0 0 0;
+}
+.contact_form__comment{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.contact_form__fname{
+    font-size: 20px;
+    color: #D9EBE9;
+}
+.contact_form__email{
+    margin-top: 50px;
+    font-size: 20px;
+    color: #D9EBE9;
+}
+.contact_form__label{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #D9EBE9;
+}
+.contact_form__input{
+    width: 500px;
+    margin-top: 20px;
+    color: #D9EBE9;
+    border: none;
+    background-color: #0C131A;
+    border-bottom: 1px solid #D9EBE9;
+}
+.contact_form__area{
+    display: block;
+	width: 500px;
+	height: 150px;
+	resize: none;
+	color: #D9EBE9;
+    background-color: #0C131A;
+    border: 1px solid #D9EBE9;
+}
+.contact_form__send{
+    margin: 50px 0 0 0;
+}
