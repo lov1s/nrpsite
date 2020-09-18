@@ -3,7 +3,6 @@
     background: #F2F2F2;
 }
 .features__wrapper{
-    width: 1400px;
     margin: 0 auto;
 }
 .features__list{
@@ -38,6 +37,7 @@
     text-decoration: none;
 }
 .features__link:hover{
+    text-decoration: none;
     opacity: 0.7;
 }
 .features__link span{
@@ -52,9 +52,9 @@
     top: 23px; 
     bottom: 0;
     width: 120px;
-    height: 100px;
+    height: 100px; 
     background: url("../img/paypal_features.svg") no-repeat;
-    
+    background-size: 100px 100px;
 }
 .features__link--shipping::before{
     content: '';
@@ -62,10 +62,10 @@
     display: block; 
     top: 23px; 
     bottom: 0;
+    background: url("../img/shipping_features.svg") no-repeat;
     width: 120px;
     height: 100px;
-    background: url("../img/shipping_features.svg") no-repeat;
-    
+    background-size: 100px 100px;  
 }
 .features__link--help::before{
     content: '';
@@ -75,5 +75,50 @@
     bottom: 0;
     width: 120px;
     height: 100px;
-    background: url("../img/help_features.svg") no-repeat;  
+    background: url("../img/help_features.svg") no-repeat;
+    background-size: 100px 100px;  
+}
+@media(max-width: 1199px){
+    .features__link span{
+        padding-left: 130px;
+    }
+}
+@media(max-width: 992px){
+    // .features__link{
+    //     padding: 0 0 0 65px;
+    // }
+    // .features__link--paypal::before{
+    //     background-size: 70px 100px; 
+    // }
+    // .features__link--shipping::before{
+    //     background-size: 70px 100px;
+    // }
+    // .features__link--help::before{
+    //     background-size: 70px 100px;
+    // }
+    // .features__link span{
+    //     padding-top: 120px;
+    //     padding-left: 0;
+    // }
+    .features__list{
+        flex-wrap: wrap;
+    }
+    .features__item{
+        width: 100%;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+    .features__link--paypal::before{
+            background-size: 80px 80px; 
+        }
+        .features__link--shipping::before{
+            background-size: 80px 80px;
+        }
+        .features__link--help::before{
+            background-size: 80px 80px;
+        }
+        .features__link span {
+            width: 300px;
+        }
+    
 }

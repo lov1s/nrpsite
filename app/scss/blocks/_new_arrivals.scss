@@ -1,10 +1,10 @@
-.best_seller{
+.new_arrivals{
     background: #F2F2F2;
 }
-.best_seller__wrap{
+.new_arrivals__wrap{
     margin: 0 auto;
 }
-.best_seller__title{
+.new_arrivals__title{
     margin: 0;
     padding-top: 80px;
     padding-bottom: 50px;
@@ -12,17 +12,17 @@
     font-size: 36px;
 }
 
-.best_seller__list{
+.new_arrivals__list{
     display: flex;
     
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.best_seller__link:hover{
+.new_arrivals__link:hover{
     text-decoration: none;
 }
-.best_seller__item{
+.new_arrivals__item{
     position: relative;
     box-sizing: border-box;
     display: block;
@@ -38,65 +38,49 @@
     font-weight: bold;
     text-decoration: none;
 }
-.best_seller__item:last-child{
+.new_arrivals__item:last-child{
     margin-right: 0;
 }
-.best_seller__item:hover{
+.new_arrivals__item:hover{
     box-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    text-decoration: none;
     cursor: pointer;
 }
-.best_seller__name{
+.new_arrivals__name{
     display: block;
     margin-top: 15px;
     margin-left: 15px;
     font-size: 16px;
     font-weight: medium;
 }
-.best_seller__raiting{
+.new_arrivals__raiting{
     margin-top: 9px;
     margin-bottom: 15px;
     margin-left: 15px;
 }
-.best_seller__star{
+.new_arrivals__star{
     width: 15px;
     height: 15px;
 }
-.best_seller__link{
+.new_arrivals__link{
     display: block;
     color: #0E1821;
     text-decoration: none;
 }
-.best_seller__bottom{
+.new_arrivals__bottom{
     display: flex;
     margin-bottom: 45px;
     margin-left: 15px;
     margin-right: 20px;
 }
-.product__cart{
-    position: relative;
-    width: 25px;
-    height: 25px;
-    margin-left: auto;
-}
-.product__cart::after{
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 21px;
-    bottom: 0;
-    right: 0;
-    background-image: url("../img/cart.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 @media(max-width: 1199px){
-    .best_seller__item{
+    .new_arrivals__item{
         margin-right: 50px;
     }
 }
 @media(max-width: 992px){
-    .best_seller__item{
+    .new_arrivals__item{
         margin-right: 15px;
     }
 }

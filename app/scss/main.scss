@@ -1,19 +1,31 @@
-@import 'var';
+@import "./node_modules/bootstrap/scss/bootstrap";
 
-@import 'mixin';
+@import "var";
 
-@import './blocks/header';
+@import "mixin";
 
-@import './blocks/main';
+@import "./blocks/header";
 
-@import './blocks/features';
+@import "./blocks/main";
 
-@import './blocks/main';
+@import "./blocks/features";
 
-@import './blocks/best_seller';
+@import "./blocks/main";
 
-@import './blocks/about_us';
+@import "./blocks/best_seller";
 
-@import './blocks/footer';
+@import "./blocks/about_us";
 
-@import './blocks/contact';
+@import "./blocks/footer";
+
+@import "./blocks/contact";
+
+@import "./blocks/catalog";
+
+@import "./blocks/new_arrivals";
+
+@import "./blocks/custom_patches";
+
+
+
+
