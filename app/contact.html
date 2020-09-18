@@ -21,7 +21,7 @@
                 <div class="main-nav__wrapper ">
                     <ul class="main-nav__list site-list main-nav__list--second">
                         <li class="site-list__item main-nav__item site-list__item--active">
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="site-list__item main-nav__item ">
                             <a href="catalog.html">Catalog</a>
@@ -34,8 +34,13 @@
                         </li>
                     </ul>
                     <ul class="main-nav__list user-list main-nav__list--first">
-                        <li class="user-list__item main-nav__item  user-list__item--border">
-                            <a class="user-list__link user-list__search" href="#"><span>Search</span></a>
+                        <li class="user-list__item  user-list__search user-list__item--border">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search" class="input">
+                                <div class="btn-search">
+                                  <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                             </div>
                         </li>
                         <li class="user-list__item main-nav__item  user-list__item--border">
                             <a class="user-list__link user-list__sign_in" href="#"><span>Sign in</span></a>
@@ -61,18 +66,48 @@
                     <div class="contact_form__wrap">
                         <form class="contact_form__user" action="/action_page.php">
                             <fieldset class="contact_form__comment">
-                                <label class="contact_form__fname" for="fname">Name:</label>
-                                <input class="contact_form__input" type="text" id="fname" name="fname">
-                                <label class="contact_form__email" for="email">Enter your email:</label>
-                                <input class="contact_form__input" type="email" id="email" name="email">
-                                <label class="contact_form__label" for="message">Comment</label>
-                                <textarea class="contact_form__area" id="message" autocomplete="off" name="message" placeholder="Your massage"></textarea>
+                                <div class="styled-input">
+                                    <input type="text" required />
+                                    <label>Name</label> 
+                                </div>
+                                <div class="styled-input">
+                                    <input type="text" required />
+                                    <label>Email</label> 
+                                </div>
+                                <div class="styled-input">
+                                    <textarea required></textarea>
+                                    <label>Message</label>
+                                </div>  
                                 <input class="contact_form__send btn" type="submit" value="Send">
                             </fieldset>
                         </form>
-                    
                     </div>
                 </section>
+                <!-- <div class="container">
+                    <div class="row input-container">
+                            <div class="col-xs-12">
+                                <div class="styled-input wide">
+                                    <input type="text" required />
+                                    <label>Name</label> 
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="styled-input wide">
+                                    <input type="text" required />
+                                    <label>Email</label> 
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="styled-input wide">
+                                    <textarea required></textarea>
+                                    <label>Message</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="btn-lrg submit-btn">Send Message</div>
+                            </div>
+                    </div>
+                </div> -->
             </div>
         </div>
 
@@ -112,5 +147,6 @@
         </div>
         <p class="page_footer__copyrights">© Copyright 2020 Rocket Patches Inc. All Rights Reserved.</p>
     </footer>
+    <script src="js/app.min.js"></script>
 </body>
 </html>

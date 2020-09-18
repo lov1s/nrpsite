@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Patches</title>
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <header class="page-header header">
+        <nav class="main-nav nav main-nav--closed main-nav--nojs">
+            <div class="main-nav_wrap">
+                <div class="main-nav-top">
+                    <a class="page-header-logo logo" href="#">
+                            <img class="page-header__logo-img" src="img/logo.svg" width="86" height="35" alt="logo">
+                    </a>
+                    <button class="main-nav__toggle " type="button">
+                            <span class="visually-hidden">Open Menu</span>
+                    </button>
+                </div>
+                <div class="main-nav__wrapper ">
+                    <ul class="main-nav__list site-list main-nav__list--second">
+                        <li class="site-list__item main-nav__item site-list__item--active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="site-list__item main-nav__item ">
+                            <a href="catalog.html">Catalog</a>
+                        </li>
+                        <li class="site-list__item main-nav__item ">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="site-list__item main-nav__item ">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li class="site-list__item main-nav__item ">
+                            <a href="custom_patches.html">Custom patches</a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list user-list main-nav__list--first">
+                        <li class="user-list__item  user-list__search  user-list__item--border">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search" class="input">
+                                <div class="btn-search">
+                                  <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                             </div>
+                        </li>
+                        <li class="user-list__item main-nav__item  user-list__item--border">
+                            <a class="user-list__link user-list__sign_in" href="#"><span>Sign in</span></a>
+                        </li>
+                        <li class="user-list__item main-nav__item user-list__item--border ">
+                            <a class="user-list__link user-list__cart" href="#"><span>Cart</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="custom_patch">
+        <div class="custom_patch__wrap">
+            <form action="/action_page.php">
+                <p class="custom__title">Select size*</p>
+                <div class="size__wrap">
+                    <div class="size__selection">
+                        <div class="width__wrap">
+                            <label for="width">width</label>
+                            <select class="size__width" name="width" id="width">
+                                <option value="select">Select</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                        </select>
+                        </div>
+                        <div class="height__wrap">
+                            <label for="height">height</label>
+                            <select class="size__height" name="height" id="height">
+                                <option value="select">Select</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="size__img"><img src="img/patch_size.JPG" alt="patch size"></div>
+                </div>
+                <div class="custom_patch__coverage">
+                    <p class="custom__title">Choose Your Embroidery coverage*</p>
+                    <ul class="custom_patch__list">
+                        <li class="custom_patch__item">
+                            <span class="custom_patch__title">50%</span>
+                            <img class="coverage__img" src="img/product_item2.jpg" alt="product">
+                            <p class="custom_patch__text">Roughly 50% of your patch will have thread coverage. Best for text only designs.</p>
+                            <input class="coverage__btn visually-hidden" type="radio" name="btn" id="btn-1" checked>
+                            <label class="coverage__label-btn" for="btn-1">
+                                <span>Select</span>
+                            </label>
+                        </li>
+                        <li class="custom_patch__item"><span class="custom_patch__title">75%</span>
+                            <img class="coverage__img" src="img/product_item2.jpg" alt="product">
+                            <p class="custom_patch__text">Roughly 50% of your patch will have thread coverage. Best for text only designs.</p>
+                            <input class="coverage__btn visually-hidden" type="radio" name="btn" id="btn-1" checked>
+                            <label class="coverage__label-btn" for="btn-2">
+                                <span>Select</span>
+                            </label>
+                        </li>
+                        <li class="custom_patch__item">
+                            <span class="custom_patch__title">100%</span>
+                            <img class="coverage__img" src="img/product_item2.jpg" alt="product">
+                            <p class="custom_patch__text">Roughly 50% of your patch will have thread coverage. Best for text only designs.</p>
+                            <input class="coverage__btn visually-hidden" type="radio" name="btn" id="btn-1" checked>
+                            <label class="coverage__label-btn" for="btn-3">
+                                <span>Select</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>              
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- <p class="custom__title">Choose Your Embroidery coverage*</p>
+                    <div class="coverage__wrap">
+                        <input class="coverage__btn visually-hidden" type="radio" name="btn" id="btn-1" checked>
+                        <label class="coverage__label" for="btn-1">
+                            <span class="coverage__title">50%</span>
+                            <img class="coverage__img" src="img/product_item2.jpg" alt="product">
+                            <p>Roughly 50% of your patch will have thread coverage. Best for text only designs.</p>
+                        </label>
+                        <input class="coverage__btn visually-hidden" type="radio" name="btn" id="btn-2" checked>
+                        <label class="coverage__label" for="btn-2">
+                            <span class="coverage__title">75%</span>
+                            <img class="coverage__img" src="img/product_item2.jpg" alt="product">
+                            <p>Roughly 50% of your patch will have thread coverage. Best for text only designs.</p>
+                        </label>
+                        <input class="coverage__btn visually-hidden" type="radio" name="btn" id="btn-3" checked>
+                        <label class="coverage__label" for="btn-3">
+                            <span class="coverage__title">100%</span>
+                            <img class="coverage__img" src="img/product_item2.jpg" alt="product">
+                            <p>Roughly 50% of your patch will have thread coverage. Best for text only designs.</p>
+                        </label>
+                    </div> -->
