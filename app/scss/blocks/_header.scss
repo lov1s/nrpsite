@@ -64,6 +64,9 @@
     white-space: nowrap;
 }
 
+.user-list__search{
+    padding: 0;
+}
 .search-box {
     position: relative;
 }
@@ -82,7 +85,16 @@
     color: #29313a;
     transition: all 0.8s ease;
 }
-
+.fa-search{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    font-weight: 500;
+    font-style: normal;
+}
+.animate i{
+    display: none;
+}
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #29313a;
@@ -112,9 +124,7 @@
     top: 20px;
     cursor: pointer;
     text-align: center;
-    line-height: 80px;
     font-size: 20px;
-    color: #fff;
     transition: all 0.8s ease;
 }
 
@@ -181,23 +191,45 @@
     background: url("../img/mcart.svg") no-repeat;
     opacity: 0.7;
 }
-
-// .user-list__search span{
-//     @include visually-hidden();
-// }
-.user-list__cart span {
-    @include visually-hidden();
+.user-list__link span{
+    padding-left: 50px;
 }
-
-.user-list__sign_in span {
-    @include visually-hidden();
-}
-
 .main-nav__item a:hover {
     opacity: 0.6;
 }
 
 
+@media(max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+
+    .page-header-logo {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .main-nav__item {
+        padding-right: 20px;
+    }
+
+    .user-list__cart::before {
+        left: 30px;
+    }
+
+}
+@media(min-width: 767px){
+    .user-list__cart span {
+        @include visually-hidden();
+    }
+
+    .user-list__sign_in span {
+        @include visually-hidden();
+    }
+    .fa-search{
+        display: none;
+    }
+}
 @media(max-width: 767px) {
     .main-nav_wrap {
         flex-direction: column;
@@ -205,6 +237,7 @@
 
     .main-nav__wrapper {
         flex-direction: column;
+        margin: 0;
     }
 
     .main-nav__list {
@@ -223,6 +256,7 @@
         padding: 30px 0 30px 100px;
 
     }
+    
     .page-header-logo {
         margin: 15px 0;
     }
@@ -321,27 +355,28 @@
     .main-nav--nojs .user-list__item {
         display: block;
     }
+    .user-list__search{
+        padding-top: 0;
+    }
+    .btn-search::before{
+        top: 8px;
+        left: 0;
+    }
+    .user-list__sign_in::before{
+        left: 0;
+    }
+    .user-list__cart::before{
+        left: 0;
+    }
+    .input{
+        top: 0;
+        left: 40px;
+    }
+    .btn-search{
+        top: 0;
+    }
 }
 
-@media(max-width: 1199px) {
-    .container {
-        width: 960px;
-    }
-
-    .page-header-logo {
-        width: 250px;
-        margin-top: 20px;
-    }
-
-    .main-nav__item {
-        padding-right: 20px;
-    }
-
-    .user-list__cart::before {
-        left: 30px;
-    }
-
-}
 
 @media(max-width: 992px) {
     .container {
